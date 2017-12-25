@@ -14,9 +14,11 @@ const routes: Routes = [
       {
         path: 'heroes',
         loadChildren: '../heroes/heroes.module#HeroesModule'
+      },
+      {
+        path: 'generate-doc',
+        loadChildren: '../excel/generate-doc.module#GenerateDocModule'
       }
-      //   { path: 'excel-import', component: ExcelComponent },
-      //   { path: 'sheetjs', component: SheetjsComponent }
     ]
   }
 ];

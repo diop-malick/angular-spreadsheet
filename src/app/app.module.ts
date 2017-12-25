@@ -8,10 +8,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
-import { ExcelComponent } from './excel/excel.component';
-import { SheetjsComponent } from './sheetjs/sheetjs.component';
 
-import { ExcelService } from './excel/excel.service';
 import { SidenavService } from './layout/sidenav/sidenav.service';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -32,7 +29,7 @@ import { AppRoutingModule } from './app-routing.module';
       dataEncapsulation: false
     })
   ],
-  providers: [SidenavService, ExcelService],
+  providers: [SidenavService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

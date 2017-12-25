@@ -2,16 +2,43 @@
 
 basic Excel export and import capabilities.
 
-Excel upload
-
-Import Excel Sheet Data in MS SQL server Database
-
 # Links
 
-* https://github.com/SheetJS/js-xlsx
-* https://github.com/eligrey/FileSaver.js
+* Excel upload
+
+  * https://github.com/SheetJS/js-xlsx
+  * https://github.com/eligrey/FileSaver.js
+
+* Import Excel Sheet Data in MS SQL server Database
+
+* Client-side JavaScript PDF generation
+
+  * [jsPDF](https://github.com/MrRio/jsPDF)
+  * [jsPDF dataTable](https://github.com/simonbengtsson/jsPDF-AutoTable)
+  * [Pdf make](https://github.com/bpampuch/pdfmake)
 
 # IN PROGRESS
+
+# TODO
+
+* pdf table
+  https://github.com/simonbengtsson/jsPDF-AutoTable
+
+* PDF
+  exporter des données au format PDF/DOCX.
+  / bulletin from many model elements pdf
+  http://rahulgaba.com/front-end/2016/07/14/generating-pdf-using-jspdf-and-html2canvas.html
+
+  * mettre en place un système qui permet, à partir d'un template HTML, de réaliser cet export
+  * l'affichage en HTML peut dépendre du navigateur donc pour générer un document imprimable, il vaut mieux faire un PDF
+
+- datagrid with filter, Sort , Pagination , Search and export to CSV
+
+* http://www.c-sharpcorner.com/article/import-data-from-excel-to-db-using-angularjs-and-web-api-2/
+
+* http://sheetjs.com/demos/
+
+# DONE
 
 * material design and layout
 
@@ -24,19 +51,6 @@ ng g component shared/components/header
 ng g component shared/components/sidenav
 ng g component shared/components/footer
 ```
-
-# TODO
-
-* use tel parent model and material design
-* http://sheetjs.com/demos/
-
-* PDF / bulletin from many model elements pdf
-
-- datagrid with filter, Sort , Pagination , Search and export to CSV
-
-* http://www.c-sharpcorner.com/article/import-data-from-excel-to-db-using-angularjs-and-web-api-2/
-
-# DONE
 
 * export/import data to excel file
 

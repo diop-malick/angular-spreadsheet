@@ -7,7 +7,6 @@ import { GenerateDocRoutingModule } from '../excel/generate-doc-routing.module';
 
 import { ExcelComponent } from '../excel/excel.component';
 import { SheetjsComponent } from '../sheetjs/sheetjs.component';
-import { PdfComponent } from '../pdf/pdf.component';
 
 import { ExcelService } from '../excel/excel.service';
 
@@ -18,7 +17,7 @@ import { ExcelService } from '../excel/excel.service';
     CustomMaterialModule,
     GenerateDocRoutingModule
   ],
-  declarations: [ExcelComponent, SheetjsComponent, PdfComponent],
+  declarations: [ExcelComponent, SheetjsComponent],
   providers: [ExcelService],
   exports: []
 })
