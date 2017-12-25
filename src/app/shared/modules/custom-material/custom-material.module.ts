@@ -31,6 +31,31 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
  * expansion : https://github.com/angular/material2/blob/master/src/lib/expansion/expansion.md
  */
 @NgModule({
+  /* if your component belongs to a module that imports the AppMaterialModule already,
+  then you don’t need to import material components again in your component template */
+  // imports: [
+  //   MatButtonModule,
+  //   MatButtonToggleModule,
+  //   MatCheckboxModule,
+  //   MatMenuModule,
+  //   MatToolbarModule,
+  //   MatSortModule,
+  //   MatTableModule,
+  //   MatTabsModule,
+  //   MatIconModule,
+  //   MatCardModule,
+  //   MatListModule,
+  //   MatDatepickerModule,
+  //   MatDialogModule,
+  //   MatSidenavModule,
+  //   MatFormFieldModule,
+  //   MatInputModule,
+  //   MatGridListModule,
+  //   MatExpansionModule,
+  //   MatPaginatorModule,
+  //   MatSelectModule,
+  //   MatSnackBarModule
+  // ],
   exports: [
     MatButtonModule,
     MatButtonToggleModule,

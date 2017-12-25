@@ -13,6 +13,18 @@ Import Excel Sheet Data in MS SQL server Database
 
 # IN PROGRESS
 
+* material design and layout
+
+```
+mkdir -p src/app/shared/components/
+ng generate module shared/modules/custom-material
+ng generate module layout
+ng g component layout
+ng g component shared/components/header
+ng g component shared/components/sidenav
+ng g component shared/components/footer
+```
+
 # TODO
 
 * use tel parent model and material design
@@ -20,13 +32,15 @@ Import Excel Sheet Data in MS SQL server Database
 
 * PDF / bulletin from many model elements pdf
 
-* transfort to heros tuto , copy part 6
-* datagrid with filter, Sort , Pagination , Search and export to CSV
+- datagrid with filter, Sort , Pagination , Search and export to CSV
 
-- http://www.c-sharpcorner.com/article/import-data-from-excel-to-db-using-angularjs-and-web-api-2/
+* http://www.c-sharpcorner.com/article/import-data-from-excel-to-db-using-angularjs-and-web-api-2/
 
 # DONE
 
 * export/import data to excel file
+
   * https://github.com/SheetJS/js-xlsx/tree/master/demos/angular2
   * https://github.com/luwojtaszek/ngx-excel-export
+
+* Use angualr TOur of hero tutorial
