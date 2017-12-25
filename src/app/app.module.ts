@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -8,31 +9,18 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { ExcelComponent } from './excel/excel.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { SheetjsComponent } from './sheetjs/sheetjs.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { MessagesComponent } from './messages/messages.component';
-import { HeroSearchComponent } from './heroes-search/hero-search.component';
-import { HeroDetailComponent } from './heroes-detail/hero-detail.component';
-import { MessageService } from './message.service';
-import { HeroService } from './hero.service';
+
 import { ExcelService } from './excel/excel.service';
+import { SidenavService } from './layout/sidenav/sidenav.service';
 
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ExcelComponent,
-    DashboardComponent,
-    SheetjsComponent,
-    HeroesComponent,
-    MessagesComponent,
-    HeroSearchComponent,
-    HeroDetailComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
@@ -44,7 +32,7 @@ import { AppRoutingModule } from './app-routing.module';
       dataEncapsulation: false
     })
   ],
-  providers: [HeroService, ExcelService, MessageService],
+  providers: [SidenavService, ExcelService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="toggleSidenav()">
+    <mat-icon class="md-24">menu</mat-icon>
+  </button>
+  <span>Tour of hero</span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="example-spacer"></span>
+
+  <span>Mon compte</span>
+  <button mat-icon-button [matMenuTriggerFor]="appMenu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-menu #appMenu="matMenu">
+  <a disabled mat-menu-item *ngIf="isLoggedIn()" routerLink="/account" routerLinkActive="active">
+    <mat-icon matListIcon>account_circle</mat-icon>
+    <span> Account </span>
+  </a>
+  <a disabled mat-menu-item (click)="onLoggedout()" routerLinkActive="active">
+    <mat-icon matListIcon>fingerprint</mat-icon>
+    <span> Log Out </span>
+  </a>
+  <a disabled mat-menu-item disabled routerLink="." routerLinkActive="active">
+    <mat-icon matListIcon>settings</mat-icon>
+    <span> Settings </span>
+  </a>
+  <button disabled mat-menu-item disabled>
+    <mat-icon> announcement </mat-icon>
+    <span> Edit </span>
+  </button>
+</mat-menu>

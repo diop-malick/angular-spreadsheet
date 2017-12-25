@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* You can add global styles to this file, and also import other style files */
+
+/* Include Angular Material's icons & standards font */
+
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+@import url('//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic');
+
+/* Include Angular Material's prebuilt themes  
+* pink-bluegrey.css
+* purple-green.css
+* deeppurple-amber.css
+*/
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+}
+
+html,
+body,
+material-app,
+mat-sidenav-container,
+.my-content {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
