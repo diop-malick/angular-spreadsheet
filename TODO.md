@@ -19,6 +19,9 @@ basic Excel export and import capabilities.
 
 # IN PROGRESS
 
+* generate gradesheet populated by JSON data
+https://www.sitepoint.com/generating-pdfs-from-web-pages-on-the-fly-with-jspdf/
+
 # TODO
 
 * pdf table
